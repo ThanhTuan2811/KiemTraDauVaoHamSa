@@ -68,9 +68,9 @@ header{
 .mega-menu {
     display: block; 
     position: absolute;
-    top: 112px;
+    top: 109px;
     left: 0;
-    width: 135%;
+    width: 100%;
     height: 0; 
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 1000;
@@ -84,7 +84,7 @@ header{
 .mega-menu:hover {
     height: 400px; 
     opacity: 1;
-    padding: 2%;
+   padding-top: 2%;
 }
 
 .mega-menu-content {
@@ -144,12 +144,9 @@ header{
 }
 
 .menu-column:hover ~ .menu-products {
-    opacity: 1; /* Hiện khi hover vào toàn bộ .menu-column */
+    opacity: 1; 
 }
 
-/* .menu-column:hover + .menu-products {
-    display: flex;
-} */
 
 .product-item {
     width: 25%;
@@ -206,56 +203,55 @@ header{
  }
  .sidebar {
    
-    width: 100%; /* Chiều rộng sidebar */
-    height: 100%; /* Chiều cao toàn màn hình */
-    background-color:#07272E; /* Màu nền tối */
+    width: 100%;
+    height: 100%; 
+    background-color:#07272E; 
     display: flex;
     gap: 20px;
     padding-left: 30%;
     flex-direction: column;
  
     align-items: center;
-    z-index: 1000; /* Đảm bảo sidebar nằm trên các phần tử khác */
+    z-index: 1000; 
 }
 
-/* Nội dung giữa */
+
 .sidebar-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Khoảng cách giữa các phần tử */
+    gap: 40px;
 }
 
-/* Copyright và Follow Us */
+
 .copyright{
     margin-top: 30px;
     margin-bottom: 85px;
 }
 .copyright,
 .follow-us {
-    font-family: 'Montserrat', sans-serif; /* Font chữ giống trong code của bạn */
+    font-family: 'Montserrat', sans-serif; 
     font-size: 19px;
-    color:#CDFF9A; /* Màu xanh lá sáng */
-    writing-mode: vertical-rl; /* Xoay dọc */
-    transform: rotate(180deg); /* Xoay để chữ đọc từ dưới lên */
-   
+    color:#CDFF9A; 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
-/* Biểu tượng mạng xã hội */
+
 .social-icons {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Khoảng cách giữa các biểu tượng */
+    gap: 20px; 
 }
 
 .social-icons a {
-    color: #fff; /* Màu trắng cho biểu tượng */
+    color: #fff; 
     font-size: 16px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #C4D82E; /* Chuyển màu khi hover */
+    color: #C4D82E; 
 }
  .main-right{
     width: 96%;
