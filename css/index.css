@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 0px solid;
+    width: 100%;
+  
+  
+
+}
+header{
+   width: 100%;
+    background-color: #CDFF9A;
+    padding: 1%;
+    padding-left: 2%;
+
+
+
+  
+}
+.box-header{
+     width: 95%;
+      margin: 0 auto;
+      display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+.logo img{
+    width: 141px;
+    height: 67px;
+}
+.menu-main ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-main ul li a{
+    text-decoration: none;
+    color: #07272E;
+    font-weight:560;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+.menu-main ul li a::after{
+   content: "";
+    background: rgb(0, 0, 0);
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+.menu-main ul li a:hover::after{
+    width: 50%;
+    transform: translate(100%);
+}
+
+.mega-menu {
+    display: block; 
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 135%;
+    height: 0; 
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    opacity: 0; 
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+    padding: 0; 
+}
+
+.catalogs:hover .mega-menu,
+.mega-menu:hover {
+    height: 400px; 
+    opacity: 1;
+    padding: 2%;
+}
+
+.mega-menu-content {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.menu-column {
+    width: 20%;
+  
+}
+
+
+
+.menu-column ul {
+    list-style: none;
+      display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-column ul li {
+    border: 0px solid;
+    border-bottom: 1px solid gray;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    
+    padding-left: 15px;
+}
+.menu-column ul li:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.menu-column ul li a {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #07272E;
+    text-decoration: none;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    
+}
+
+
+/* Product Items */
+.menu-products {
+    opacity: 0;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.menu-column:hover ~ .menu-products {
+    opacity: 1; /* Hiện khi hover vào toàn bộ .menu-column */
+}
+
+/* .menu-column:hover + .menu-products {
+    display: flex;
+} */
+
+.product-item {
+    width: 25%;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    
+}
+
+.product-item p {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #07272E;
+    margin-top: 10px;
+}
+
+ .icon-right{
+    display: flex;
+    gap: 15px;
+ }
+ .icon-right span i{
+    font-size: 30px;
+        color: #07272E;
+
+ }
+ main{
+    background-color: #07272E;
+    height: 100%;
+   
+ }
+
+ .background-main{
+    border: 0px solid;
+
+   
+    height: 100%;
+    display: flex;
+
+
+ }
+ .main-item{
+    width: 100%;
+    display: flex;
+ }
+
+ .main-left{
+    width: 5%;
+    border-right: 1px solid white;
+    height: 100vh;
+ }
+ .sidebar {
+   
+    width: 100%; /* Chiều rộng sidebar */
+    height: 100%; /* Chiều cao toàn màn hình */
+    background-color:#07272E; /* Màu nền tối */
+    display: flex;
+    gap: 20px;
+    padding-left: 30%;
+    flex-direction: column;
+ 
+    align-items: center;
+    z-index: 1000; /* Đảm bảo sidebar nằm trên các phần tử khác */
+}
+
+/* Nội dung giữa */
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Copyright và Follow Us */
+.copyright{
+    margin-top: 30px;
+    margin-bottom: 85px;
+}
+.copyright,
+.follow-us {
+    font-family: 'Montserrat', sans-serif; /* Font chữ giống trong code của bạn */
+    font-size: 19px;
+    color:#CDFF9A; /* Màu xanh lá sáng */
+    writing-mode: vertical-rl; /* Xoay dọc */
+    transform: rotate(180deg); /* Xoay để chữ đọc từ dưới lên */
+   
+}
+
+/* Biểu tượng mạng xã hội */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icons a {
+    color: #fff; /* Màu trắng cho biểu tượng */
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #C4D82E; /* Chuyển màu khi hover */
+}
+ .main-right{
+    width: 96%;
+    
+    
+    
+ }
+ .main-content-super{
+   
+   display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    gap: 20px;
+ }
+
+ .main-item .main-right div h1{
+    z-index: 2;
+    position: absolute;
+   
+ }
+ .main-title{
+    margin-top: 10px;
+    width: 46%;
+    border: 0px solid white;
+    display: flex;
+    position: relative;
+    align-items: center;
+ }
+  .main-title img{
+    z-index: 0;
+    width: 400px;
+    height: 213px;
+    position: absolute;
+    top: 200px;
+
+ }
+ .main-title .main-content{
+   
+    position: absolute;
+    top: 320px;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+ }
+ .main-title .main-content h4{
+    font-weight: 380;
+    color: #CDFF9A;
+    margin-bottom: 5px;
+ }
+ .main-title .main-content h1{
+    font-size: 55px;
+    font-weight: 500;
+    width: 459px;
+    height: 216px;
+    color: white;
+
+ }
+ .view-more{
+    border: 1px solid #CDFF9A;
+    width: 153px;
+    height: 50px;
+    position: absolute;
+    top: 600px;
+    display: flex;
+ }
+  .line{
+    width: 10%;
+    height: 100%;
+    border: 0px solid black;
+    background-color: #CDFF9A;
+    
+ }
+ .view-more .btn{
+    border: none;
+    width: 90%;
+    height: 100%;    
+    
+ }
+ .view-more .btn button{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    background-color: #07272E;
+    font-size: 15px;
+    color: white;
+    border: none;
+
+    
+
+ }
+ .main-img{
+   width: 60%;
+   position: relative;
+ }
+ .main-img img{
+   width: 100%;
+   height: 670px;
+   
+
+ }
+.arrow {
+   
+    float: right; 
+    display: flex;
+    justify-content: space-between; 
+    width: 50px; 
+    height: 20px; 
+    position: absolute;
+    right: 75px;
+    top: 690px;
+    
+}
+
+
+
+
+
